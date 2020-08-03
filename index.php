@@ -22,39 +22,39 @@ Do{
     switch ($operation){
         case "0": exit("\n\n Thank you for using LIBRARY \n\n");
         case "1" :
-            require_once ("../Book/Add.php");
+            require_once ("Book/Add.php");
             $addBook = new AddBook;
             echo $addBook ->greet();
             break;
 
         case "2":
-            require_once (__FILE__."/../Book/Update.php");
+            require_once ("Book/Update.php");
             $updateBook = new UpdateBook;
             echo $updateBook -> greet();
             break;
         case "3":
-            require_once (__DIR__."/../Book/Delete.php");
+            require_once ("Book/Delete.php");
             $deleteBook = new DeleteBook;
             echo $deleteBook -> greet();
             break;
         case "4":
-            require_once (__DIR__."/../Book/Find.php");
+            require_once ("Book/Find.php");
             $findBook = new Find_by_ISBN;
             echo $findBook -> greet();
             break;
         case "5":
-            require_once (__DIR__."/../Book/ShowAll.php");
+            require_once ("Book/ShowAll.php");
             $show_all_books = new ShowAll;
             echo $show_all_books ->Show_All_Books();
             break;
         case "6":
             $option = "6";
-            require_once (__DIR__."/../Book/ShowBy.php");
+            require_once ("Book/ShowBy.php");
             $showBook_by_Year = new ShowBy($option);
             break;
         case "7":
             $option = "7";
-            require_once (__DIR__."/../Book/ShowBy.php");
+            require_once ("Book/ShowBy.php");
             $showBook_by_Year = new ShowBy($option);
             break;
 
