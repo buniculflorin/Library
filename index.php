@@ -1,7 +1,6 @@
 <?php
-
     echo "\n\n Welcome to Library \n\n";
-Do{
+do{
     echo "\n 1. Add \n";
     echo " 2. Update \n";
     echo " 3. Delete \n";
@@ -9,10 +8,8 @@ Do{
     echo " 5. Show all books \n";
     echo " 6. Show books by year \n";
     echo " 7. Show books by author \n";
-
     echo " 0. EXIT\n";
     echo " Select your option ";
-
     $operation = readline();
     $acceptedValues = ["1", "2", "3", "4", "5", "6", "7", "0"];
     while (!in_array($operation, $acceptedValues)) {
