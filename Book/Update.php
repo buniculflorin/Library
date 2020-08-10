@@ -1,11 +1,8 @@
 <?php
-
-
 class UpdateBook
 {
-    public function greet ()
+    public function greet()
     {
         return "Hello from " . self::class . "\n";
     }
-
 }

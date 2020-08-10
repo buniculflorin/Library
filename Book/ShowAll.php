@@ -1,12 +1,8 @@
 <?php
-
-
 class ShowAll
 {
-    Public function Show_All_Books (){
+    Public function greet()
+    {
         return "\n Hello from " . self::class. "\n\n";
-
     }
-
-
 }
