@@ -7,12 +7,12 @@ declare(strict_types=1);
  *
  * Creates/Provides connection to database
  * This class MUST be used whenever a connection to the database is needed.
- * Implements Singleton Pattern
+ * Implements Singleton and Factory Pattern
  */
 class ConnectionFactory
 {
-    const MACHINE_MAC = 'mac';
-    const MACHINE_LINUX = 'linux';
+    public const MACHINE_MAC = 'mac';
+    public const MACHINE_LINUX = 'linux';
 
     /**
      * @var PDO
