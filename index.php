@@ -41,24 +41,9 @@ if ($db) {
                 echo "\n Please insert ISBN\n ISBN format contains either 10 or 13 numbers \n\n";
                 $data = readline();
                 $addBook->data = $data;
-                $pass = false;
-                while ($pass == false){
-                    $addBook->checkISBN();
-                    echo "\n==================\n";
-                    $isbn = $addBook->isbn;
-                    $sql = 'SELECT * FROM storage WHERE isbn = $addBook';
-                    $stmt = $db->prepare($sql);
-                    $stmt->execute();
-                    $stmt->fetch(PDO::FETCH_ASSOC);
-                    if(!stmt)
-                    {
-                        $pass=true;
-                    }
-                }
                 echo "\n\n poate poate \n";
                 echo $addBook->author. "\n";
                 echo $addBook->year. "\n";
-
                 break;
             case "2":
                 $updateBook=new UpdateBook;
